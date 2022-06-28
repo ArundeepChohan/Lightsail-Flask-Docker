@@ -1,0 +1,15 @@
+{
+    "serviceName": "signup-application",
+    "containers": {
+        "signup-app-container": {
+            "image": ":signup-application.latest.1",
+            "ports": {
+                "80": "HTTP"
+            }
+        }
+    },
+    "publicEndpoint": {
+        "containerName": "signup-app-container",
+        "containerPort": 80
+    }
+}
